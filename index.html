@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jonnalagadda Navya • Portfolio</title>
+    <meta name="description" content="Portfolio of Jonnalagadda Navya – CSE student passionate about web development, Java, and problem solving.">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary">
+        <a href="#top" class="brand" aria-label="Home">
+          <span class="logo" aria-hidden="true">JN</span>
+          <span class="brand-text">Navya</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" class="icon-button" aria-label="Toggle theme">🌙</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-content">
+          <img class="avatar" src="assets/profile.jpg" alt="Portrait of Jonnalagadda Navya"/>
+          <div>
+            <h1>
+              Hi, I'm <span class="accent">Jonnalagadda Navya</span>
+              <span class="typewriter" aria-live="polite"></span>
+            </h1>
+            <p class="subtitle">B.Tech CSE student • Vijayawada, Andhra Pradesh</p>
+            <div class="quick-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button" href="#contact">Contact Me</a>
+              <a class="button ghost" href="assets/Navya_Resume.pdf" download>Download Resume</a>
+            </div>
+            <ul class="contact-inline" aria-label="Quick contact">
+              <li><a href="tel:+919100706689" rel="noopener">📞 9100706689</a></li>
+              <li><a href="mailto:navyajonnalagadda2005@gmail.com">✉️ navyajonnalagadda2005@gmail.com</a></li>
+              <li>📍 Vijayawada, Andhra Pradesh</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>Summary</h2>
+        <p>
+          Highly motivated and detail‑oriented student with a strong academic record (CGPA 9.7).
+          Solid foundation in C, C++, Java, HTML, CSS, and JavaScript. Quick learner with strong
+          problem‑solving abilities and a passion for continuous learning. Effective team player with
+          clear communication skills, adaptable to new challenges and focused on delivering quality
+          results. Seeking opportunities to apply technical knowledge and analytical skills in a
+          dynamic professional environment.
+        </p>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="edu">
+          <div class="edu-item">
+            <h3>Bachelor of Technology in Computer Science</h3>
+            <p class="meta">KL University • Expected 2027</p>
+            <p class="small">Relevant Coursework: Java, Python, Database Management Systems, Data Structures</p>
+          </div>
+          <div class="edu-item">
+            <h3>Diploma in Computer Engineering</h3>
+            <p class="meta">AANM & VVRSR Polytechnic, Gudlavalleru • 2021–2024</p>
+            <p class="small">CGPA: 9.6</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div>
+            <h3>Technical</h3>
+            <ul class="tags">
+              <li>C</li><li>C++</li><li>Java</li><li>Python</li>
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              <li>MySQL</li><li>MongoDB</li><li>SQL</li>
+              <li>Git</li><li>Agile</li><li>Scrum</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Soft Skills</h3>
+            <ul class="tags">
+              <li>Communication</li><li>Teamwork</li><li>Problem-solving</li>
+              <li>Time Management</li><li>Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <div class="project-controls">
+            <input id="project-search" type="search" placeholder="Search projects or tags…" aria-label="Search projects">
+            <div class="filter-tags" aria-label="Filter by tag">
+              <button class="chip" data-filter="all" aria-pressed="true">All</button>
+              <button class="chip" data-filter="web">Web</button>
+              <button class="chip" data-filter="java">Java</button>
+              <button class="chip" data-filter="db">Database</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid projects-grid" id="project-list">
+          <article class="card project" data-tags="web react node mysql" data-reveal>
+            <h3>E‑Commerce Website</h3>
+            <p>
+              Dynamic online shopping platform with product browsing, cart, checkout, and order tracking.
+              Includes user authentication, search and filtering, and an admin dashboard for managing products
+              and orders.
+            </p>
+            <p class="small">Tools: HTML, CSS, JavaScript, React.js, Node.js, MySQL</p>
+            <div class="card-actions">
+              <span class="tag">web</span>
+              <span class="tag">react</span>
+              <span class="tag">node</span>
+              <span class="tag">mysql</span>
+            </div>
+          </article>
+          <article class="card project" data-tags="java web" data-reveal>
+            <h3>Online Banking</h3>
+            <p>
+              Secure digital banking platform for viewing balances, transferring funds, paying bills,
+              and accessing support online.
+            </p>
+            <p class="small">Tools: Java, Web</p>
+            <div class="card-actions">
+              <span class="tag">java</span>
+              <span class="tag">web</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <ul class="checks">
+          <li>Completed internship at Spypro Security Solutions</li>
+          <li>Participated in real‑time game workshop using Buildbox</li>
+          <li>Completed Google AI‑ML Virtual Internship with hands‑on ML and data analysis</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="contact">
+          <div class="contact-cards">
+            <a class="contact-card" href="tel:+919100706689" aria-label="Call 9100706689">
+              <span class="icon">📞</span>
+              <span>
+                <strong>Phone</strong>
+                <span>+91 9100706689</span>
+              </span>
+            </a>
+            <a class="contact-card" href="mailto:navyajonnalagadda2005@gmail.com" aria-label="Email Navya">
+              <span class="icon">✉️</span>
+              <span>
+                <strong>Email</strong>
+                <span>navyajonnalagadda2005@gmail.com</span>
+              </span>
+            </a>
+            <div class="contact-card" aria-label="Location">
+              <span class="icon">📍</span>
+              <span>
+                <strong>Location</strong>
+                <span>Vijayawada, Andhra Pradesh</span>
+              </span>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate data-reveal>
+            <div class="form-row">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required>
+              </label>
+            </div>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="button primary">Send Message</button>
+              <a id="mailto-fallback" class="button ghost" href="mailto:navyajonnalagadda2005@gmail.com">Open in Email</a>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Jonnalagadda Navya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+

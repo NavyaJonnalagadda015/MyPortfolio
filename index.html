@@ -13,6 +13,22 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    
+    <!-- Background Animations -->
+    <div class="bg-animations">
+      <div class="particles-container" id="particles"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+      </div>
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
 
     <header class="site-header" id="top">
       <nav class="nav" aria-label="Primary">
@@ -89,20 +105,74 @@
         <h2>Skills</h2>
         <div class="skills">
           <div>
-            <h3>Technical</h3>
-            <ul class="tags">
-              <li>C</li><li>C++</li><li>Java</li><li>Python</li>
-              <li>HTML</li><li>CSS</li><li>JavaScript</li>
-              <li>MySQL</li><li>MongoDB</li><li>SQL</li>
-              <li>Git</li><li>Agile</li><li>Scrum</li>
-            </ul>
+            <h3>Technical Skills</h3>
+            <div class="skill-bars">
+              <div class="skill-item" data-reveal>
+                <div class="skill-info">
+                  <span>Java</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-reveal>
+                <div class="skill-info">
+                  <span>Python</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-reveal>
+                <div class="skill-info">
+                  <span>Web Development</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-reveal>
+                <div class="skill-info">
+                  <span>Database Management</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div>
-            <h3>Soft Skills</h3>
-            <ul class="tags">
-              <li>Communication</li><li>Teamwork</li><li>Problem-solving</li>
-              <li>Time Management</li><li>Leadership</li>
-            </ul>
+            <h3>Technologies</h3>
+            <div class="tech-grid">
+              <div class="tech-item" data-reveal>
+                <span class="tech-icon">☕</span>
+                <span>Java</span>
+              </div>
+              <div class="tech-item" data-reveal>
+                <span class="tech-icon">🐍</span>
+                <span>Python</span>
+              </div>
+              <div class="tech-item" data-reveal>
+                <span class="tech-icon">🌐</span>
+                <span>HTML/CSS</span>
+              </div>
+              <div class="tech-item" data-reveal>
+                <span class="tech-icon">⚡</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="tech-item" data-reveal>
+                <span class="tech-icon">🗄️</span>
+                <span>MySQL</span>
+              </div>
+              <div class="tech-item" data-reveal>
+                <span class="tech-icon">📊</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -122,6 +192,9 @@
         </div>
         <div class="grid projects-grid" id="project-list">
           <article class="card project" data-tags="web react node mysql" data-reveal>
+            <div class="project-image">
+              <div class="project-placeholder">🛒</div>
+            </div>
             <h3>E‑Commerce Website</h3>
             <p>
               Dynamic online shopping platform with product browsing, cart, checkout, and order tracking.
@@ -135,8 +208,12 @@
               <span class="tag">node</span>
               <span class="tag">mysql</span>
             </div>
+            <button class="project-btn" data-project="ecommerce">View Details</button>
           </article>
           <article class="card project" data-tags="java web" data-reveal>
+            <div class="project-image">
+              <div class="project-placeholder">🏦</div>
+            </div>
             <h3>Online Banking</h3>
             <p>
               Secure digital banking platform for viewing balances, transferring funds, paying bills,
@@ -147,12 +224,31 @@
               <span class="tag">java</span>
               <span class="tag">web</span>
             </div>
+            <button class="project-btn" data-project="banking">View Details</button>
           </article>
         </div>
       </section>
 
       <section id="achievements" class="section">
         <h2>Achievements</h2>
+        <div class="stats-grid">
+          <div class="stat-card" data-reveal>
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card" data-reveal>
+            <div class="stat-number" data-target="9.7">0</div>
+            <div class="stat-label">CGPA</div>
+          </div>
+          <div class="stat-card" data-reveal>
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat-card" data-reveal>
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
         <ul class="checks">
           <li>Completed internship at Spypro Security Solutions</li>
           <li>Participated in real‑time game workshop using Buildbox</li>
@@ -210,6 +306,27 @@
         </div>
       </section>
     </main>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-header">
+          <h2 id="modal-title"></h2>
+          <div id="modal-tags"></div>
+        </div>
+        <div class="modal-body">
+          <div id="modal-image" class="modal-image"></div>
+          <div id="modal-description"></div>
+          <div id="modal-features"></div>
+          <div id="modal-tech"></div>
+        </div>
+        <div class="modal-footer">
+          <button class="button primary" id="modal-demo">View Demo</button>
+          <button class="button" id="modal-code">View Code</button>
+        </div>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <p>© <span id="year"></span> Jonnalagadda Navya. All rights reserved.</p>
